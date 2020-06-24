@@ -21,7 +21,7 @@ result, error = p.communicate()
 
 if error != 0:
   print('You are not connected to a remote repository.  Can\'t get the repository name')
-  print ("Your return code:  " + str(result))
+  print ("Your return code:  " + str(error))
   sys.exit()
 
 
