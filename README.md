@@ -9,7 +9,10 @@
 
 
 
-[![Build Status](https://jenkins.com/job/test-git-hooks/job/test-readme/badge/icon)](https://jenkins.com/job/test-git-hooks/job/test-readme/)
+
+[![Build Status](https://jenkins.com/job/test-git-hooks/job/master/badge/icon)](https://jenkins.com/job/test-git-hooks/job/master/)
+
+
 
 
 
