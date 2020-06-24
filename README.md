@@ -8,12 +8,15 @@
 
 
 
-[![Build Status](https://jenkins.com/job/test-git-hooks/job/test-merge2/badge/icon)](https://jenkins.com/job/test-git-hooks/job/test-merge2/)
+
+[![Build Status](https://jenkins.com/job/test-git-hooks/job/test-readme/badge/icon)](https://jenkins.com/job/test-git-hooks/job/test-readme/)
 
 
 
 
-Test test test
+
+
+Sucks
 
 
 
