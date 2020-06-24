@@ -6,6 +6,7 @@
 
 
 
+
 [![Build Status](https://jenkins.com/job/test-git-hooks/job/master/badge/icon)](https://jenkins.com/job/test-git-hooks/job/master/)
 
 
@@ -18,8 +19,9 @@
 
 
 
-# Testing Branch
-test again and again
+
+
+
 # Procedure to work with git hooks
 
 1.  cp -r .git/hooks git-hooks
