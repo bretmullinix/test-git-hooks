@@ -12,7 +12,7 @@
 
 
 
-[![Build Status](https://jenkins.com/job/test-git-hooks/job/test-merge3/badge/icon)](https://jenkins.com/job/test-git-hooks/job/test-merge3/)
+[![Build Status](https://jenkins.com/job/test-git-hooks/job/again/badge/icon)](https://jenkins.com/job/test-git-hooks/job/test-merge3/)
 
 
 
@@ -25,7 +25,7 @@
 
 
 
-Eliminate
+Trying stuff
 
 
 
