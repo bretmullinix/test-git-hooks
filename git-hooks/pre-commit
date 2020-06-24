@@ -16,13 +16,16 @@ import sys
 from subprocess import PIPE
 # Hard-Coded for your repo (ToDo: get from remote?)
 REPO="master"
-result = subprocess.Popen(['git','config','--local', 'remote.origin.url'], stdin=PIPE, stdout=PIPE, stderr=PIPE);
-if result.returncode != 0:
+p = subprocess.Popen(['git','config','--local', 'remote.origin.url'], stdin=PIPE, stdout=PIPE, stderr=PIPE);
+result, error = p.communicate()
+
+if error != 0:
   print('You are not connected to a remote repository.  Can\'t get the repository name')
-  print ("Your return code:  " + str(result.returncode))
+  print ("Your return code:  " + str(result))
   sys.exit()
 
-REPOurl=result.stdout.decode()
+
+REPOurl=result.decode()
 LAST_PATH_SEPARATOR=REPOurl.rfind('/')
 GIT_SUFFIX=REPOurl.rfind('.git')
 REPO = REPOurl[(LAST_PATH_SEPARATOR + 1): GIT_SUFFIX]
