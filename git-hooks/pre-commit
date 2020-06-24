@@ -19,7 +19,8 @@ result = subprocess.Popen(['git','config','--local', 'remote.origin.url']);
 if result.returncode != 0:
   print('You are not connected to a remote repository.  Can\'t get the repository name')
   sys.exit()
-REPOurl=subprocess.result.stdout.decode()
+
+REPOurl=result.stdout.decode()
 LAST_PATH_SEPARATOR=REPOurl.rfind('/')
 GIT_SUFFIX=REPOurl.rfind('.git')
 REPO = REPOurl[(LAST_PATH_SEPARATOR + 1): GIT_SUFFIX]
@@ -34,13 +35,13 @@ BRANCH=subprocess.check_output(["git",
 # String with hard-coded values
 # See Embedding Status Images[3] for alternate formats (private repos, svg, etc)
 
-#  [![Build Status](https://jenkins-sct-jenkins.apps.ecicd.dso.ncps.us-cert.gov/job/{REPO}/job/{BRANCH}/badge/icon)]
-#  (https://jenkins-sct-jenkins.apps.ecicd.dso.ncps.us-cert.gov/job/{REPO}/job/{BRANCH}/)
+#  [![Build Status](https://jenkins.com/job/{REPO}/job/{BRANCH}/badge/icon)]
+#  (https://jenkins.com/job/{REPO}/job/{BRANCH}/)
 # Output String with Variable substitution
 BRANCH=BRANCH.decode("utf-8") 
 print ("Branch: {BRANCH}".format(BRANCH=BRANCH))
 jenkins="""
-[![Build Status](https://jenkins-sct-jenkins.apps.ecicd.dso.ncps.us-cert.gov/job/{REPO}/job/{BRANCH}/badge/icon)](https://jenkins-sct-jenkins.apps.ecicd.dso.ncps.us-cert.gov/job/{REPO}/job/{BRANCH}/)
+[![Build Status](https://jenkins.com/job/{REPO}/job/{BRANCH}/badge/icon)](https://jenkins.com/job/{REPO}/job/{BRANCH}/)
 \n
 """.format(BRANCH=BRANCH, REPO=REPO)
 

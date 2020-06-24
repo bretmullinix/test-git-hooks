@@ -1,7 +1,6 @@
 
-test-jenkinsfile
 
-[![Build Status](https://jenkins-sct-jenkins.apps.ecicd.dso.ncps.us-cert.gov/job/test-jenkinsfile/job/master/badge/icon)](https://jenkins-sct-jenkins.apps.ecicd.dso.ncps.us-cert.gov/job/test-jenkinsfile/job/master/)
+[![Build Status](https://jenkins.com/job/test-jenkinsfile/job/master/badge/icon)](https://jenkins.com/job/test-jenkinsfile/job/master/)
 
 # Procedure to work with git hooks
 
@@ -42,39 +41,3 @@ Take a look at the pre-commit hook:
       The python file is used to generate the build status button according to
       the current repo and branch after every commit.
 
-
-
-
-
-
-
-[![Build Status](https://jenkins-sct-jenkins.apps.ecicd.dso.ncps.us-cert.gov/job/test-jenkinsfile/job/new_test_branch/badge/icon)](https://jenkins-sct-jenkins.apps.ecicd.dso.ncps.us-cert.gov/job/test-jenkinsfile/job/new_test_branch/)
-
-
-
-
-
-
-
-
-
-
-
-
-
-# SETUP
-
-To check in code in this repository, you must set the following:
-
-      git config core.hooksPath git-hooks
-
-
-## Changing heading too quick
-
-random text
-
-==================
-
-## Demoing to Team
-
-## another heading
