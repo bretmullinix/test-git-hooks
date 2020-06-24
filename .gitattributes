@@ -1,2 +1,2 @@
-git-hooks/ merge=ours
-README.md merge=ours
+git-hooks/ merge=theirs
+README.md merge=theirs
