@@ -18,6 +18,7 @@ REPO="master"
 result = subprocess.Popen(['git','config','--local', 'remote.origin.url']);
 if result.returncode != 0:
   print('You are not connected to a remote repository.  Can\'t get the repository name')
+  print ("Your return code:  " + str(result.returncode))
   sys.exit()
 
 REPOurl=result.stdout.decode()
