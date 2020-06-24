@@ -7,11 +7,13 @@
 
 
 
-[![Build Status](https://jenkins.com/job/test-git-hooks/job/master/badge/icon)](https://jenkins.com/job/test-git-hooks/job/master/)
+
+[![Build Status](https://jenkins.com/job/test-git-hooks/job/test-merge2/badge/icon)](https://jenkins.com/job/test-git-hooks/job/test-merge2/)
 
 
 
 
+Test test test
 
 
 
