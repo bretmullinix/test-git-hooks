@@ -5,7 +5,10 @@
 
 
 
-[![Build Status](https://jenkins.com/job/test-git-hooks/job/test-merge/badge/icon)](https://jenkins.com/job/test-git-hooks/job/test-merge/)
+
+[![Build Status](https://jenkins.com/job/test-git-hooks/job/master/badge/icon)](https://jenkins.com/job/test-git-hooks/job/master/)
+
+
 
 
 
