@@ -19,13 +19,13 @@ REPO="master"
 p = subprocess.Popen(['git','config','--local', 'remote.origin.url'], stdin=PIPE, stdout=PIPE, stderr=PIPE);
 results = p.communicate()[0]
 
-if p.returncode == 0:
+if p.returncode != 0:
   print('You are not connected to a remote repository.  Can\'t get the repository name')
   print ("Your return code:  " + str(results))
   sys.exit()
 
 
-REPOurl=result.decode()
+REPOurl=results.decode()
 LAST_PATH_SEPARATOR=REPOurl.rfind('/')
 GIT_SUFFIX=REPOurl.rfind('.git')
 REPO = REPOurl[(LAST_PATH_SEPARATOR + 1): GIT_SUFFIX]

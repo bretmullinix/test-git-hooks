@@ -1,6 +1,9 @@
 
 
-[![Build Status](https://jenkins.com/job/test-jenkinsfile/job/master/badge/icon)](https://jenkins.com/job/test-jenkinsfile/job/master/)
+
+[![Build Status](https://jenkins.com/job/test-git-hooks/job/master/badge/icon)](https://jenkins.com/job/test-git-hooks/job/master/)
+
+
 
 # Procedure to work with git hooks
 
