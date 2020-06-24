@@ -17,11 +17,11 @@ from subprocess import PIPE
 # Hard-Coded for your repo (ToDo: get from remote?)
 REPO="master"
 p = subprocess.Popen(['git','config','--local', 'remote.origin.url'], stdin=PIPE, stdout=PIPE, stderr=PIPE);
-result, error = p.communicate()
+results = p.communicate()[0]
 
-if error != 0:
+if p.returncode == 0:
   print('You are not connected to a remote repository.  Can\'t get the repository name')
-  print ("Your return code:  " + str(error))
+  print ("Your return code:  " + str(results))
   sys.exit()
 
 
