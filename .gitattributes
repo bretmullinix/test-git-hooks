@@ -1,1 +1,2 @@
 git-hooks/ merge=ours
+README.md merge=ours
